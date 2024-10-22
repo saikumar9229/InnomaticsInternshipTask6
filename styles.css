@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('Background1.jpg.jpg'); /* Replace with your background image URL */
+    background-image: url('Background1.jpg.jpg');
     background-size: cover;
     margin: 0;
     padding: 20px;
@@ -10,7 +10,7 @@ body {
 .container {
     max-width: 600px;
     margin: auto;
-    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    background: rgba(255, 255, 255, 0.9);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);

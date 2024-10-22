@@ -20,19 +20,14 @@ function addTask(e) {
     const dueDate = dueDateInput.value;
     const category = categoryInput.value;
     const priority = priorityInput.value;
-    
-    // Validation: Ensure all fields are filled
     if (!taskText || !dueDate || !category || !priority) {
         alert("Please fill out all fields before adding the task.");
-        return; // Stop the form submission
+        return;
     }
-    
     const tasks = getTasksFromLocalStorage();
     const task = { text: taskText, completed: false, dueDate, category, priority };
     tasks.push(task);
     localStorage.setItem('tasks', JSON.stringify(tasks));
-    
-    // Clear the form after submission
     taskInput.value = '';
     dueDateInput.value = '';
     categoryInput.value = '';
