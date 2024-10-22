@@ -1,22 +1,24 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-image: url('your-background-image.jpg'); /* Replace with your background image URL */
+    background-size: cover;
     margin: 0;
     padding: 20px;
+    color: #333;
 }
 
 .container {
     max-width: 600px;
     margin: auto;
-    background: white;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
-
 
 h1 {
     text-align: center;
+    color: #4A90E2;
 }
 
 form {
@@ -27,6 +29,43 @@ form {
 input, select, button {
     margin: 10px 0;
     padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+input:focus, select:focus {
+    border-color: #4A90E2;
+    outline: none;
+}
+
+button {
+    background-color: #4A90E2;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.filter-buttons button {
+    background-color: #E94E77;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.filter-buttons button:hover {
+    background-color: #D83A6B;
 }
 
 ul {
@@ -35,11 +74,19 @@ ul {
 }
 
 li {
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #f1f1f1;
 }
 
 .completed {
